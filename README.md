@@ -1,4 +1,4 @@
-# CHIRRILAND
+# CHIRRILAND WIP
 juego en 2d creado en pygame.
 
 sudo apt get install python-pygame
