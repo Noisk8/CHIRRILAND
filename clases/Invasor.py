@@ -17,12 +17,12 @@ class Invasor(pygame.sprite.Sprite):
 
         #self.velocidadDisparo = 1
         self.listaDisparo= []
-        self.velocidad =20
+        self.velocidad =2
         self.rect.top = posy
         self.rect.left= posx
 
 
-        self.rangoDisparo =5
+        self.rangoDisparo =1
         self.tiempoCambio =1
 
         self.conquista = False

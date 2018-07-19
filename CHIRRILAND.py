@@ -20,7 +20,7 @@ def detenerTodo():
 def cargarEnemigos():
     posx = 100
     for x in range(1,5):
-        enemigo =Enemigo(posx,100,40,'imagenes/marcianoA.jpg','imagenes/MarcianoB.jpg',)
+        enemigo =Enemigo(posx,100,40,'imagenes/pipe1.png','imagenes/pipe2.png',)
         listaEnemigo.append(enemigo)
         posx = posx + 200
 
@@ -48,7 +48,7 @@ def CHIRRILAND():
     ImagenFondo = pygame.image.load('imagenes/Fondo.jpg')
 
     pygame.mixer.music.load('sonidos/sm.mp3')
-    pygame.mixer.music.play(1)
+    pygame.mixer.music.play()
 
     fuente = pygame.font.SysFont("Arial",30)
     texto=fuente.render("FIN DEL JUEGO",0,(120,100,40))
@@ -65,7 +65,7 @@ def CHIRRILAND():
     #Loop infinito mientas sea verdad
     while True:
 
-        reloj.tick(60)
+        reloj.tick(38)
 
         #jugador.movimiento()
 
@@ -91,6 +91,8 @@ def CHIRRILAND():
                     elif event.key == K_s:
                         x,y = jugador.rect.center
                         jugador.disparar(x,y)
+            
+
 
     #Actualiza la ventana
 

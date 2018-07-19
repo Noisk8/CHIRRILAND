@@ -16,8 +16,8 @@ class naveEspacial(pygame.sprite.Sprite):
         self.listaDisparo =[]
         self.Vida =True
 
-        self.velocidad = 20
-        self.sonidoDisparo = pygame.mixer.Sound("sonidos/laser.mp3")
+        self.velocidad = 40
+        self.sonidoDisparo = pygame.mixer.Sound("sonidos/1.wav")
         self.sonidoExplosion = pygame.mixer.Sound("sonidos/laser.mp3")
 
 
